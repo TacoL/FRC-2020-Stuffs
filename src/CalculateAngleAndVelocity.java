@@ -12,7 +12,7 @@ public class CalculateAngleAndVelocity {
     *         double[1] = velocity to fire the projectile so that it follows a ballistic trajectory along a semi circle with diameter z
     */
 	public static double[] calcAandV(double distX) {
-		double theta = Math.atan2(heightOfWall, distX);
+		double theta = Math.atan2(heightOfWall - heightOfTurret, distX);
 		double finalAngle = (theta <= 72 ? theta * 1.25 : theta);
 		
 		double velocity = 0;
