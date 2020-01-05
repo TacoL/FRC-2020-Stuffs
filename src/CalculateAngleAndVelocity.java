@@ -22,12 +22,12 @@ public class CalculateAngleAndVelocity {
 		return new double[] {finalAngle, velocity};
 	}
 	
-	public static double[] getZeroes(double a, double b, double c) {
+	/*public static double[] getZeroes(double a, double b, double c) {
 		double zero1 = ((-b + Math.sqrt(Math.pow(b, 2) - (4.0 * a * c))) / (2 * a));
 		double zero2 = ((-b - Math.sqrt(Math.pow(b, 2) - (4.0 * a * c))) / (2 * a));
 		
 		return new double[] {zero1, zero2};
-	}
+	}*/
 	
 	public static double physicsProblemCalcY(double distX, double velocity, double angle) {
 		double timeToHitWall = distX / (velocity * Math.cos(angle));
